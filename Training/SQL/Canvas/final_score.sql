@@ -1,4 +1,4 @@
-use canvas;
-select name, final_score from course_score_fact
-inner join account_dim on account_id = account_dim.account_id
-where final_score is not null;
+USE canvas;
+SELECT name, final_score FROM course_score_fact
+INNER JOIN account_dim ON account_id = account_dim.agiccount_id
+WHERE final_score is NOT NULL;
