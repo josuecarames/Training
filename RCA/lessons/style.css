@@ -1,0 +1,38 @@
+html {
+    margin: 0;
+    padding: 0;
+
+}
+
+nav {
+    height: 5vmax;
+}
+
+.main-content {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+}
+
+.ul-bar {
+    text-align: right;
+    margin-top: auto 0;
+}
+
+.nav-item {
+    list-style-type: none;
+    padding: 2% 1.5%;
+    color: lightblue;
+    clear: right;
+    position: absolute;
+    right: 5px;
+    top: 0px;
+}
+
+.home-title {
+    text-align: center;
+}
+
+.header-main {
+    width: 100%;
+    display: inline;
+}
