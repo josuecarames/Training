@@ -48,6 +48,7 @@ form {
 .form-item {
     padding: 15px 2%;
     vertical-align: middle;
+    text-align: right;
     margin-left: auto;
     margin-right: auto;
     height: 85px;
@@ -59,4 +60,5 @@ form {
     width: 65%;
     margin: 0;
     padding: 0;
+    text-align: center;
 }
