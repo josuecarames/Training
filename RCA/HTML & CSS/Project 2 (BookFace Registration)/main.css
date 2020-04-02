@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    widows: 100%;
+}
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: normal;
+    text-align: center;
+    padding: 3% 0;
+}
+
+p {
+    text-align: center;
+}
+
+.container {
+    padding: 0;
+    height: 100%;
+    padding: 0 10%;
+}
+
+.container-box {
+    width: calc(50% - 1.99px);
+    display: inline-block;
+    padding: 2%;
+    margin: 0;
+    height: 100%;
+}
+
+.left {
+    background-color: lightgray;
+}
+
+.right {
+    background-color: whitesmoke;
+}
+
+form {
+    text-align: right;
+    vertical-align: middle;
+}
+
+.form-item {
+    padding: 15px 2%;
+    vertical-align: middle;
+}

@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    widows: 100%;
+    font-family: "Raleway", Thin, sans-serif;
+}
+
+body {
+    font-size: .9em;
+}
+
+nav {
+    background-color: red;
+    height: 10%;
+    margin: 0;
+    padding: 1%;
+    vertical-align: middle;
+}
+
+.main-nav {
+    text-align: right;
+}
+
+.main-nav__bar {
+    background-color: grey;
+    padding: 0;
+    margin: 0;
+}
+
+.main-nav__item {
+    list-style-type: none;
+    text-decoration: none;
+    background-color: yellow;
+    display: inline-block;
+    padding: .5% 1%;
+    margin: 0 .5%;
+}
+
+.main__bike-image {
+    border: 10px solid purple;
+}
+
+.main__bike-image:hover {
+    border: 10px solid orange;
+}
+
+.main__bike-image--thumbnail {
+    width: 100%;
+}
+
+.logo {
+    font-family: "Raleway", Bold, sans-serif;
+    list-style-type: none;
+    text-decoration: none;
+    display: inline-block;
+    padding: .5% 1%;
+    margin: 0 .5%;
+}
+
+footer {
+    background-color: #303030;
+    color: whitesmoke;
+    height: 10%;
+    padding: 2%;
+    vertical-align: middle;
+    text-align: center;
+}
