@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* img {
+    width: 100%;
+    max-width: 150px;
+} */
+
+h1 {
+    text-align: center;
+    padding: 2%;
+}
+
+p {
+    padding: 0 2%;
+}
+
+.flex-box {
+    padding: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: lightgrey;
+    margin: 2%;
+}
+
+.one {
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.two {
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.three {
+    flex-direction: column-reverse;
+}
+
+.four {
+    flex-direction: column;
+    align-items: stretch;
+}

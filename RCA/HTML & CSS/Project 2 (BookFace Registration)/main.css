@@ -17,9 +17,8 @@ p {
 }
 
 .container {
-    padding: 0;
-    height: 100%;
     padding: 0 10%;
+    display: flex;
 }
 
 .container-box {
@@ -27,7 +26,6 @@ p {
     display: inline-block;
     padding: 2%;
     margin: 0;
-    height: 600px;
     vertical-align: top;
 }
 
@@ -53,6 +51,7 @@ form {
     margin-right: auto;
     height: 85px;
     width: 75%;
+    display: block;
 }
 
 .form-item__input {
