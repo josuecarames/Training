@@ -1,12 +1,15 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    widows: 100%;
 }
 
-/* img {
-    width: 100%;
-    max-width: 150px;
-} */
+img {
+    padding: 1%;
+    /* max-width: 150px; */
+    /* width: 100%; */
+}
 
 h1 {
     text-align: center;
@@ -18,15 +21,17 @@ p {
 }
 
 .flex-box {
-    padding: 2%;
     display: flex;
-    flex-wrap: wrap;
+    padding: 2%;
     background-color: lightgrey;
     margin: 2%;
+    width: auto;
+    /* height: 300px; */
 }
 
 .one {
     flex-direction: row;
+    align-content: space-between;
     justify-content: space-evenly;
 }
 
@@ -37,9 +42,16 @@ p {
 
 .three {
     flex-direction: column-reverse;
+    align-items: flex-start;
+    justify-content: space-evenly;
 }
 
 .four {
     flex-direction: column;
     align-items: stretch;
+}
+
+.flex-item {
+    display: flex;
+    flex: 1 1 auto;
 }
