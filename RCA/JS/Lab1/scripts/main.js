@@ -68,6 +68,17 @@
 
 // 5. Uppercase the first character
 
+let str = ToLowerCase()prompt("Type an integer")
+
+let slicedStr = str.slice(0,1);
+let capitalSlicedStr = slicedStr.ToUpperCase();
+
+const ucFirst = function(str) {
+  return str.toUpperCase(str.slice(0)) + str.slice(1, str.length())
+};
+
+console.log(ucFirst(str));
+
 // Write a function ucFirst(str) that returns the string str with the 
 // uppercased first character, for instance:
 
