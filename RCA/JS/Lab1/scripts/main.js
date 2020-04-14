@@ -12,11 +12,7 @@
 
 // console.log(evenOrOdd(num));
 
-
-
-
-
-
+// --------------------------------------------------------------------------------------
 
 // 2. Sum numbers from the user
 
@@ -29,13 +25,7 @@
 
 // console.log(addTwoNumbers(num1, num2))
 
-
-
-
-
-
-
-
+// --------------------------------------------------------------------------------------
 
 // 3. A random number from min to max
 
@@ -45,12 +35,7 @@
 
 // console.log(getRandom(1, 5));
 
-
-
-
-
-
-
+// --------------------------------------------------------------------------------------
 
 // 4. A random integer from min to max
 
@@ -60,46 +45,34 @@
 
 // console.log(randomInteger(1, 5))
 
-
-
-
-
-
+// --------------------------------------------------------------------------------------
 
 // 5. Uppercase the first character
 
-let str = ToLowerCase()prompt("Type an integer")
+// let str = prompt("Type your name");
 
-let slicedStr = str.slice(0,1);
-let capitalSlicedStr = slicedStr.ToUpperCase();
+// let lowerStr = str.toLowerCase();
+// let slicedStr = str.slice(0,1);
+// let capitalSlicedStr = slicedStr.toUpperCase();
+// let remainingStr = lowerStr.slice(1, str.length);
 
-const ucFirst = function(str) {
-  return str.toUpperCase(str.slice(0)) + str.slice(1, str.length())
-};
+// const ucFirst = function(str) {
+//   return capitalSlicedStr + remainingStr;
+// };
 
-console.log(ucFirst(str));
+// alert(ucFirst(str));
 
-// Write a function ucFirst(str) that returns the string str with the 
-// uppercased first character, for instance:
-
-
-// console.log(ucFirst("dog"));
-// console.log(ucFirst("kitten"));
-
-
-
-
-
-
-
-
-d
-
-
-
-
+// --------------------------------------------------------------------------------------
 
 // 6. Check for spam
+
+let str = "viagra";
+
+const checkSpam = (str) {
+
+};
+
+
 
 // Write a function checkSpam(str) that returns true if str contains ‘viagra’ 
 // or ‘XXX’, otherwise false.
