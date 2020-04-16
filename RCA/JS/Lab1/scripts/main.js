@@ -66,57 +66,57 @@
 
 // 6. Check for spam
 
-let str = "viagra";
+// let str = "buy ViAgRA now";
+// let strIns = str.toLowerCase();
 
-const checkSpam = (str) {
+// const searchStr = function() {
+//   if (strIns.search("xxx") >= 0) {
+//     return "true"; 
+//   } else if (strIns.search("viagra") >= 0){
+//     return "true";
+//   } else {
+//     return "false";
+//   }
+// }
 
-};
+// console.log(searchStr(str));
 
-
-
-// Write a function checkSpam(str) that returns true if str contains ‘viagra’ 
-// or ‘XXX’, otherwise false.
-
-// The function must be case-insensitive:
-
-// checkSpam('buy ViAgRA now') == true
-// checkSpam('free xxxxx') == true
-// checkSpam("innocent rabbit") == false
-
-// let emailString1 = 'buy ViAgRA now';
-// let emailString2 = 'free xxxx';
-// let emailString3 = 'innocent rabbit';
-
-
-// console.log(checkSpam(emailString1));
-// console.log(checkSpam(emailString2));
-// console.log(checkSpam(emailString3));
+// --------------------------------------------------------------------------------------
 
 // 7. Truncate the text
 
-// Create a function truncate(str, maxlength) that checks the length of the str 
-// and, if it exceeds maxlength, truncates the string to make its length equal 
-// to maxlength.
+// let str = "What I'd like to tell on this topic is:";
 
-// The result of the function should be the truncated (if needed) string.
+// const truncate = function(str, maxlength) {
+//   return str.slice(0, maxlength); 
+// }
 
-// For instance:
+// console.log(truncate(str, 20));
 
-// truncate("What I'd like to tell on this topic is:", 20) = "What I'd like to tel"
-// truncate("Hi everyone!", 20) = "Hi everyone!"
-
-
-// let string1 = "What I'd like to tell on this topic is:";
-// let string2 = "What I'd like to tel";
+// --------------------------------------------------------------------------------------
 
 // 8. Extract the money
 
-// We have a cost in the form "$120". That is: the dollar sign goes first, and 
-// then the number.
+let str = "$120345";
 
-// Create a function extractCurrencyValue(str) that would extract the numeric 
-// value from such string and return it
+const strLength = function() {
+  return str.lastIndexOf();
+}
 
+const extractCurrencyValue = function() {
+  let slicedStr = str.slice(1, strLength());
+  return slicedStr;
+}
+
+console.log(str.length());
+
+
+console.log(extractCurrencyValue(str));
+
+
+
+
+// --------------------------------------------------------------------------------------
 
 // 9. The List
 
