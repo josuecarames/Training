@@ -97,88 +97,100 @@
 
 // 8. Extract the money
 
-let str = "$120345";
+// let str = "$120";
 
-const strLength = function() {
-  return str.lastIndexOf();
-}
+// const extractCurrencyValue = function() {
+//   return str.slice(1, str.length);
+// }
 
-const extractCurrencyValue = function() {
-  let slicedStr = str.slice(1, strLength());
-  return slicedStr;
-}
-
-console.log(str.length());
-
-
-console.log(extractCurrencyValue(str));
-
-
-
+// console.log(extractCurrencyValue(str));
 
 // --------------------------------------------------------------------------------------
 
 // 9. The List
 
-// Big Gary's job is to make sure that the club only lets in the "best" class of clientele.
-// Prompt the user for:
-// - their age
-// - their income
-// - if they are a celebrity ("yes" or "no")
-// - if they are wearing sneakers ("yes" or "no")
+// let user = {
+//   age: parseInt(prompt("How old are you?", "Type it in numbers")),
+//   income: parseInt(prompt("What is your income?", "$")),
+//   vip: window.prompt("Are you a celebrity?", "yes or no"),
+//   sneakers: window.prompt("Are you wearing sneakers?", "yes or no")
+// }
 
-// If Big Gary let's you in, he prints: "*nod*"
-// If he doesn't let you in, he prints: "You're not on the list."
+// let validAge = (user.age >= 18) && (user.age <= 35);
+// let validIncome = (user.income >= 100000);
+// let validVip = (user.vip === "yes");
+// let validAttire = (user.sneakers === "no");
 
-// You are not allowed in if:
-//   - you are under 18 or over 35.
-//   - you have an income under 100,000.
-//   - you are wearing sneakers.
+// let granted = function () {
+//   if ((validAge = true) && (validIncome = true) && (validVip = true) && (validAttire = true)) {
+//     return "Big Gary: *nod*";
+//   } else {
+//     return "Big Gary: You're not on the list";
+//   }
+// }
 
-// Otherwise you are let in. However, there are some exceptions, you will also be let in if:
-//   - you are over 16 and a celebrity.
-//   - you are over 16 and your income is over 5,000,000.
-//   - you are under 25 (and over 18), you have an income over 250K, but are wearing sneakers.
+// console.log(granted(user));
 
-// The test cases are as follows:
-// age, money, celeb, shoes - Outcome
-
-// Rare
-// 15, 100K, y, n - N
-// 16, 100K, y, n - Y
-// 16, 4.9M, n, n - N
-// 16, 5M, n, n - Y
-// 17, 250K, n, y - N
-// 25, 250K, n, y - N
-// 20, 250K, n, y - Y
-// 20, 249K, n, y - N
-
-// Age
-// 17, 100K, n, n - N
-// 18, 100K, n, n - Y
-// 35, 100K, n, n - N
-// 34, 100K, n, n - Y
-
-// Income
-// 20, 99K, n, n - N
-// 20, 100K, n, n - Y
-
-// Shoes
-// 20, 100K, n, y - N
-
-
+// --------------------------------------------------------------------------------------
 
 // 10. Perfect Change
-// Prompt the user for a dollar amount they would like perfect change for. (eg. 100 = $1)
-// Write code that intakes the users money and prints to the console perfect change.
-// Once the change has been printed in the console the code should stop running.
 
-// Examples:
-//    User inputs: 82
-//    Console outputs:
-//       quarter
-//       quarter
-//       quarter
-//       nickel
-//       penny
-//       penn
+// let question = parseFloat(prompt("Type total amount in numbers"));
+// let amount = parseInt(question);
+
+// let dollar = 1;
+// let quarter = 0.25;
+// let dime = 0.10;
+// let nickel = 0.05;
+// let penny = 0.01;
+
+// const dollarChange = function () {
+//     while (amount >= dollar) {
+//         amount -= dollar;
+//         console.log("dollar");
+//     } 
+// }
+    
+// const quarterChange = function () {
+//     while (amount >= quarter) {
+//         console.log("quarter");
+//         amount -= quarter;
+//     }
+// }
+
+// const dimeChange = function () {
+//     while (amount >= dime) {
+//         console.log("dime");
+//         amount -= dime;
+//     }
+// }
+
+// const nickelChange = function () {
+//     while (amount >= nickel) {
+//         console.log("nickel");
+//         amount -= nickel;
+//     }
+// }
+
+// const pennyChange = function () {
+//     while (amount >= penny) {
+//         console.log("penny");
+//         amount -= penny;
+//     }
+// }
+
+// const change = function() {
+//     if (amount >= dollar) {
+//         dollarChange();
+//     } else if (amount >= quarter) {
+//         quarterChange();
+//     } else if (amount >= dime) {
+//         dimeChange();
+//     } else if (amount >= nickel) {
+//         nickelChange();
+//     } else {
+//         pennyChange();
+//     }
+// }
+
+// console.log(change(question));
