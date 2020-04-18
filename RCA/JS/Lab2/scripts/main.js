@@ -1,36 +1,60 @@
-console.log("Lab Loaded");
+// console.log("Lab Loaded");
 
 //////////// ARRAYS ////////////
-console.log("[Hip!, Hip!]");
+// console.log("[Hip!, Hip!]");
 
 // 1. Array operations
 
 // Let’s try 5 array operations.
 
 // 1. Create an array styles with items “Jazz” and “Blues”.
+
+// let musicGenre = ["Jazz", "Blues"];
+// console.log(musicGenre);
+
 // 2. Append “Rock-n-Roll” to the end.
+
+// musicGenre.push("Rock-n-Roll");
+// console.log(musicGenre);
+
 // 3. Replace the value in the middle by “Classics”. Your code for finding the middle value should work for any arrays with odd length.
+
+// let newArray = musicGenre.splice(1, 1, "Classical");
+// console.log(musicGenre);
+
 // 4. Strip off the first value of the array and show it.
+
+// musicGenre.splice(0,1);
+// console.log(musicGenre);
+
 // 5. Prepend "Rap" and "Reggae" to the array.
 
-// The array in the process:
+// musicGenre.unshift("Rap", "Reggae");
+// console.log(musicGenre);
 
-// Jazz, Blues
-// Jazz, Blues, Rock-n-Roll
-// Jazz, Classics, Rock-n-Roll
-// Classics, Rock-n-Roll
-// Rap, Reggae, Classics, Rock-n-Roll
+// --------------------------------------------------------------------------------------
 
 // 2. Reverse input numbers
 
-// Write the function reverseInput() that:
+let num = [];
 
-// * Asks the user for numeric values using prompt.
-// * Finishes asking when the user enters a non-numeric value, an empty string, or presses “Cancel”.
-// * Returns an array of the input numbers in reverse order.
+let numPrompt = function() {
+    num.push(window.prompt("Type a number"));
+}
 
-// P.S. Zero is a valid number, please don’t stop the input on zero.
+let reverseInput = function () {
+    while ((typeOf(numPrompt) != null) && ((typeOf(numPrompt) != "string") && ((typeOf(numPrompt) != "NaN") && (numPrompt != "") && (oncancel = false)) {
+        numPrompt();
+    }
+    return num.reverse();
+}
 
+console.log(reverseInput());
+
+
+//  an empty string, or presses “Cancel”.
+
+// --------------------------------------------------------------------------------------
 
 // 3. Translate border-left-width to borderLeftWidth
 
@@ -143,8 +167,20 @@ console.log("[Hip!, Hip!]");
 // sabb('What do you mean I cant learn to code??', 8, 9) = 'Sabbatical! Boom!' 
 // sabb('Please calm down', 9, 1) = 'Back to your desk, boy.'
 
+
+
+
+
+
+
+
+
+
+
+
+
 //////////// LOOPS ////////////
-console.log("Loops and Loops and Loops and Loops and Loops and well you get the idea...");
+// console.log("Loops and Loops and Loops and Loops and Loops and well you get the idea...");
 
 // 1. Repeat until the input is a number
 

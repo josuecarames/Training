@@ -110,25 +110,23 @@
 // 9. The List
 
 // let user = {
-//   age: parseInt(prompt("How old are you?", "Type it in numbers")),
-//   income: parseInt(prompt("What is your income?", "$")),
-//   vip: window.prompt("Are you a celebrity?", "yes or no"),
-//   sneakers: window.prompt("Are you wearing sneakers?", "yes or no")
+//     age: window.prompt("How old are you?", "Type it in numbers"),
+//     income: window.prompt("What is your income?", "$"),
+//     vip: window.prompt("Are you a celebrity?", "Yes or No"),
+//     sneakers: window.prompt("Are you wearing sneakers?", "Yes or No")
 // }
-
 // let validAge = (user.age >= 18) && (user.age <= 35);
 // let validIncome = (user.income >= 100000);
-// let validVip = (user.vip === "yes");
-// let validAttire = (user.sneakers === "no");
+// let validVip = (user.vip == "yes");
+// let validAttire = (user.sneakers == "no");
 
 // let granted = function () {
-//   if ((validAge = true) && (validIncome = true) && (validVip = true) && (validAttire = true)) {
-//     return "Big Gary: *nod*";
-//   } else {
-//     return "Big Gary: You're not on the list";
-//   }
+//     if (((validAge) && (validIncome) && (validVip) && (validAttire))) {
+//         return "Big Gary: *nod*";
+//     } else {
+//         return "Big Gary: You're not on the list";
+//     }
 // }
-
 // console.log(granted(user));
 
 // --------------------------------------------------------------------------------------
