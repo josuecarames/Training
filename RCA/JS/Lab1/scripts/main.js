@@ -109,32 +109,32 @@
 
 // 9. The List
 
-// let user = {
-//     age: window.prompt("How old are you?", "Type it in numbers"),
-//     income: window.prompt("What is your income?", "$"),
-//     vip: window.prompt("Are you a celebrity?", "Yes or No"),
-//     sneakers: window.prompt("Are you wearing sneakers?", "Yes or No")
-// }
-// let validAge = (user.age >= 18) && (user.age <= 35);
-// let validIncome = (user.income >= 100000);
-// let validVip = (user.vip == "yes");
-// let validAttire = (user.sneakers == "no");
+let user = {
+    age: window.prompt("How old are you?", "Type it in numbers"),
+    income: window.prompt("What is your income?", "$"),
+    vip: window.prompt("Are you a celebrity?", "Yes or No"),
+    sneakers: window.prompt("Are you wearing sneakers?", "Yes or No")
+}
+let validAge = (user.age >= 18) && (user.age <= 35);
+let validIncome = (user.income >= 100000);
+let validVip = (user.vip == "yes");
+let validAttire = (user.sneakers == "no");
 
-// let granted = function () {
-//     if (((validAge) && (validIncome) && (validVip) && (validAttire))) {
-//         return "Big Gary: *nod*";
-//     } else {
-//         return "Big Gary: You're not on the list";
-//     }
-// }
-// console.log(granted(user));
+let granted = function () {
+    if (((validAge) && (validIncome) && (validVip) && (validAttire))) {
+        return "Big Gary: *nod*";
+    } else {
+        return "Big Gary: You're not on the list";
+    }
+}
+console.log(granted(user));
 
 // --------------------------------------------------------------------------------------
 
 // 10. Perfect Change
 
 // let question = parseFloat(prompt("Type total amount in numbers"));
-// let amount = parseInt(question);
+// let amount = parseFloat(fixedto(question));
 
 // let dollar = 1;
 // let quarter = 0.25;
