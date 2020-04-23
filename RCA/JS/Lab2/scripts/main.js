@@ -36,27 +36,32 @@
 
 // 2. Reverse input numbers
 
-let num = [];
-
-let numPrompt = function() {
-    num.push(window.prompt("Type a number"));
-}
-
-let reverseInput = function () {
-    while ((typeOf(numPrompt) != null) && ((typeOf(numPrompt) != "string") && ((typeOf(numPrompt) != "NaN") && (numPrompt != "") && (oncancel = false)) {
-        numPrompt();
+const addToArray = function() {
+    let n = [];
+    let num = parseInt(prompt("Type a number"));
+    while (!isNaN(num)) {
+        num = parseInt(prompt("Type a number"));
+        n.push(num);
     }
-    return num.reverse();
+    return n.reverse();
 }
 
-console.log(reverseInput());
-
-
-//  an empty string, or presses “Cancel”.
+console.log(addToArray());
 
 // --------------------------------------------------------------------------------------
 
 // 3. Translate border-left-width to borderLeftWidth
+
+// let str = "my-short-string"
+
+// const camelize = function(str) {
+//     str.splice();
+// }
+
+
+
+
+
 
 // Write the function camelize(str) that changes dash-separated words like 
 // “my-short-string” into camel-cased “myShortString”.
@@ -71,6 +76,16 @@ console.log(reverseInput());
 
 // Hint: use split to split the string into an array, transform it and join back
 
+
+
+
+
+
+
+
+
+
+// --------------------------------------------------------------------------------------
 
 // 4. Angie's Colors
 
@@ -166,6 +181,16 @@ console.log(reverseInput());
 // sabb('Why are you shouting?', 7, 2) = 'Back to your desk, boy.' 
 // sabb('What do you mean I cant learn to code??', 8, 9) = 'Sabbatical! Boom!' 
 // sabb('Please calm down', 9, 1) = 'Back to your desk, boy.'
+
+
+
+
+
+
+
+
+
+
 
 
 

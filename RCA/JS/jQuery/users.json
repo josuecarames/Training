@@ -1,0 +1,14 @@
+[
+    {
+        "firstName": "John",
+        "lastName": "Doe",
+        "email": "john.doe@jdoe.com",
+        "isAdmin": true
+    },
+    {
+        "firstName": "Jane",
+        "lastName": "Doe",
+        "email": "jane.doe@jdoe.com",
+        "isAdmin": false
+    },
+]

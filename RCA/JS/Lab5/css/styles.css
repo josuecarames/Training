@@ -1,0 +1,11 @@
+* {
+    padding: 0;
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+.pokeCard {
+    margin-bottom: 10px;
+}
+
+

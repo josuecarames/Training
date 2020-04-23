@@ -109,30 +109,31 @@
 
 // 9. The List
 
-// let user = {
-//     age: window.prompt("How old are you?", "Type it in numbers"),
-//     income: window.prompt("What is your income?", "$"),
-//     vip: window.prompt("Are you a celebrity?", "Yes or No"),
-//     sneakers: window.prompt("Are you wearing sneakers?", "Yes or No")
-// }
-// let validAge = (user.age >= 18) && (user.age <= 35);
-// let validIncome = (user.income >= 100000);
-// let validVip = (user.vip == "yes");
-// let validAttire = (user.sneakers == "no");
+let user = {
+    age: window.prompt("How old are you?", "Type it in numbers"),
+    income: window.prompt("What is your income?", "$"),
+    vip: window.prompt("Are you a celebrity?", "Yes or No"),
+    sneakers: window.prompt("Are you wearing sneakers?", "Yes or No")
+}
+let validAge = (user.age >= 18) && (user.age <= 35);
+let validIncome = (user.income >= 100000);
+let validVip = (user.vip == "yes");
+let validAttire = (user.sneakers == "no");
 
-// let granted = function () {
-//     if (((validAge) && (validIncome) && (validVip) && (validAttire))) {
-//         return "Big Gary: *nod*";
-//     } else {
-//         return "Big Gary: You're not on the list";
-//     }
-// }
-// console.log(granted(user));
+let granted = function () {
+    if (((validAge) && (validIncome) && (validVip) && (validAttire))) {
+        return "Big Gary: *nod*";
+    } else {
+        return "Big Gary: You're not on the list";
+    }
+}
+console.log(granted(user));
 
 // --------------------------------------------------------------------------------------
 
 // 10. Perfect Change
 
+<<<<<<< HEAD
 // let q = parseFloat(prompt("Type total amount in numbers"));
 // let q = 3.76;
 // let amount = parseFloat(q);
@@ -173,3 +174,64 @@ const change = function (amount) {
     }
 
 console.log(change(3.76));
+=======
+// let question = parseFloat(prompt("Type total amount in numbers"));
+// let amount = parseFloat(fixedto(question));
+
+// let dollar = 1;
+// let quarter = 0.25;
+// let dime = 0.10;
+// let nickel = 0.05;
+// let penny = 0.01;
+
+// const dollarChange = function () {
+//     while (amount >= dollar) {
+//         amount -= dollar;
+//         console.log("dollar");
+//     } 
+// }
+    
+// const quarterChange = function () {
+//     while (amount >= quarter) {
+//         console.log("quarter");
+//         amount -= quarter;
+//     }
+// }
+
+// const dimeChange = function () {
+//     while (amount >= dime) {
+//         console.log("dime");
+//         amount -= dime;
+//     }
+// }
+
+// const nickelChange = function () {
+//     while (amount >= nickel) {
+//         console.log("nickel");
+//         amount -= nickel;
+//     }
+// }
+
+// const pennyChange = function () {
+//     while (amount >= penny) {
+//         console.log("penny");
+//         amount -= penny;
+//     }
+// }
+
+// const change = function() {
+//     if (amount >= dollar) {
+//         dollarChange();
+//     } else if (amount >= quarter) {
+//         quarterChange();
+//     } else if (amount >= dime) {
+//         dimeChange();
+//     } else if (amount >= nickel) {
+//         nickelChange();
+//     } else {
+//         pennyChange();
+//     }
+// }
+
+// console.log(change(question));
+>>>>>>> 79ef3ab016a077bea2b33fdee1d93547f46826bb
