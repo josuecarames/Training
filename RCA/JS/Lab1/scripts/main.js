@@ -133,62 +133,43 @@
 
 // 10. Perfect Change
 
-// let question = parseFloat(prompt("Type total amount in numbers"));
-// let amount = parseInt(question);
+// let q = parseFloat(prompt("Type total amount in numbers"));
+// let q = 3.76;
+// let amount = parseFloat(q);
 
-// let dollar = 1;
-// let quarter = 0.25;
-// let dime = 0.10;
-// let nickel = 0.05;
-// let penny = 0.01;
+let dollar = 1;
+let quarter = 0.25;
+let dime = 0.10;
+let nickel = 0.05;
+let penny = 0.01;
 
-// const dollarChange = function () {
-//     while (amount >= dollar) {
-//         amount -= dollar;
-//         console.log("dollar");
-//     } 
-// }
-    
-// const quarterChange = function () {
-//     while (amount >= quarter) {
-//         console.log("quarter");
-//         amount -= quarter;
-//     }
-// }
+const change = function (amount) {
+    let a = amount.toFixed(2);
+    console.log(a);
+    while (a >= dollar) {
+        console.log("dollar");
+        a -= dollar;
+        console.log(a);
+        while (a >= quarter && a <= dollar) {    
+            console.log("quarter");
+            a -= quarter;
+            console.log(a);
+            while (a >= dime && a <= quarter) {
+                console.log("dime");
+                a -= dime;
+                console.log(a);
+                while (a >= nickel && a <= dime) {
+                    console.log("nickel");
+                    a -= nickel;
+                    console.log(a);
+                    while (a >= penny && a <= dime)
+                        console.log("penny");
+                        a -= penny;
+                        console.log(a);
+                    }    
+                }
+            }
+        }
+    }
 
-// const dimeChange = function () {
-//     while (amount >= dime) {
-//         console.log("dime");
-//         amount -= dime;
-//     }
-// }
-
-// const nickelChange = function () {
-//     while (amount >= nickel) {
-//         console.log("nickel");
-//         amount -= nickel;
-//     }
-// }
-
-// const pennyChange = function () {
-//     while (amount >= penny) {
-//         console.log("penny");
-//         amount -= penny;
-//     }
-// }
-
-// const change = function() {
-//     if (amount >= dollar) {
-//         dollarChange();
-//     } else if (amount >= quarter) {
-//         quarterChange();
-//     } else if (amount >= dime) {
-//         dimeChange();
-//     } else if (amount >= nickel) {
-//         nickelChange();
-//     } else {
-//         pennyChange();
-//     }
-// }
-
-// console.log(change(question));
+console.log(change(3.76));
