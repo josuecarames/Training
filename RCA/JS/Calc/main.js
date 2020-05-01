@@ -7,7 +7,7 @@
 //   -You should be making use of the existing buttons.
 //   -You should be making use of the existing placeholders for entering content (i.e. "firstNumber", "operator", "secondNumber", "result").
 
-let value1 = '';
+let value1 = '0';
 let value2 = '';
 let operator = '';
 let result = '';
@@ -33,3 +33,5 @@ let resultField = /* your code here: use querySelector */
 // use the value1, value2, operator and result variables.
 
 // Write and assign an event listener to handle the CLEAR key.
+
+
